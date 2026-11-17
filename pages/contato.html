@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contato e horários · Quintal da Brasa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <nav class="site-nav" aria-label="Navegação principal">
+    <a class="brand" href="../index.html">Quintal da Brasa</a>
+    <div class="site-nav-links">
+      <a href="cardapio.html">Cardápio</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html" aria-current="page">Contato</a>
+      <a class="nav-cta" href="https://wa.me/5519999098911" target="_blank" rel="noopener">Pedir pelo WhatsApp</a>
+    </div>
+  </nav>
+  <header class="page-header">
+    <h1>Visite a gente</h1>
+    <p class="lead">Endereço, contato e horários de funcionamento do Quintal da Brasa.</p>
+  </header>
+  <main>
+    <section id="contato">
+      <h2>Como chegar</h2>
+      <dl>
+        <dt>Endereço</dt><dd>R. Doze de Outubro, 801<br>Vila Santana, Valinhos – SP, 13274-125</dd>
+        <dt>WhatsApp</dt><dd><a href="https://wa.me/5519999098911" target="_blank" rel="noopener">(19) 99909-8911</a></dd>
+        <dt>Horários</dt><dd><table class="hours"><tbody>
+          <tr data-d="3"><th>Quarta-feira</th><td>10h30 – 14h30</td></tr>
+          <tr data-d="4"><th>Quinta-feira</th><td>10h30 – 14h30<br>18h30 – 00h00</td></tr>
+          <tr data-d="5"><th>Sexta-feira</th><td>10h30 – 14h30<br>18h30 – 00h00</td></tr>
+          <tr data-d="6"><th>Sábado</th><td>10h30 – 00h00</td></tr>
+          <tr data-d="0"><th>Domingo</th><td>10h30 – 16h00<small>Proclamação da República. Os horários podem ser diferentes.</small></td></tr>
+          <tr data-d="1"><th>Segunda-feira</th><td>10h30 – 14h30</td></tr>
+          <tr data-d="2"><th>Terça-feira</th><td>10h30 – 14h30</td></tr>
+        </tbody></table></dd>
+        <dt>Preço</dt><dd>R$ 20–100 por pessoa (informado por 17 pessoas)</dd>
+        <dt>Plus Code</dt><dd>22P6+VH Vila Santana, Valinhos – SP</dd>
+      </dl>
+      <p class="also"><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Quintal+da+Brasa+Gastrobar+R.+Doze+de+Outubro+801+Valinhos">Abrir no mapa</a></p>
+    </section>
+  </main>
+  <footer>Quintal da Brasa Gastrobar · Valinhos, SP</footer>
+</div>
+<script>
+const today = new Date().getDay();
+const todayRow = document.querySelector('.hours tr[data-d="' + today + '"]');
+if (todayRow) todayRow.classList.add('today');
+</script>
+</body>
+</html>
