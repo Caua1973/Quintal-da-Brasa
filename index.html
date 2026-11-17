@@ -6,122 +6,52 @@
 <title>Quintal da Brasa Gastrobar · Valinhos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#EAF0E3;--ink:#17301F;--muted:#4A6150;--card:#F7FAF2;--ember:#C8381F;--sun:#F0B429;--leaf:#2F5D3A;--line:#C9D6BF;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101E15;--ink:#EAF0E3;--muted:#A9BDAE;--card:#17291D;--line:#2B4433;--leaf:#7FB58A;--ember:#F0734F}}
-:root[data-theme="dark"]{--bg:#101E15;--ink:#EAF0E3;--muted:#A9BDAE;--card:#17291D;--line:#2B4433;--leaf:#7FB58A;--ember:#F0734F}
-*{box-sizing:border-box}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
-.wrap{max-width:880px;margin:0 auto;padding:0 20px}
-h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,serif;line-height:1.05;margin:0}
-header{padding:56px 0 36px;border-bottom:3px solid var(--sun)}
-h1{font-size:clamp(46px,11vw,96px);font-weight:800;letter-spacing:-.02em;max-width:9ch}
-.sub{font-size:20px;color:var(--muted);margin:16px 0 24px;max-width:34ch}
-.facts{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 28px;padding:0;list-style:none}
-.facts li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:600;font-size:15px}
-.btns{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:600;text-decoration:none;background:var(--ember);color:#fff}
-.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
-section{padding:44px 0;border-bottom:1px solid var(--line)}
-h2{font-size:clamp(30px,6vw,44px);font-weight:800;margin-bottom:20px}
-.dishes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-.dish{background:var(--card);border-bottom:6px solid var(--sun);border-radius:14px 14px 4px 4px;overflow:hidden}
-.dish .tx{padding:20px 20px 22px}
-.dish.sm h3{font-size:20px}
-.dish.sm .tx{padding:14px 18px 16px}
-.dishes.small{margin-top:14px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
-h2+.lead{margin:-8px 0 20px;color:var(--muted)}
-.dish h3{font-size:24px;font-weight:800}
-.dish p{margin:6px 0 0;color:var(--muted);font-size:15px}
-.also{margin-top:18px;color:var(--muted)}
-.rating{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:12px}
-.rating strong{font-family:"Bricolage Grotesque",Georgia,serif;font-size:64px;line-height:1;color:var(--ember)}
-.rating span{color:var(--muted)}
-blockquote{margin:0;max-width:62ch;font-size:19px}
-.src{font-size:14px;color:var(--muted);margin-top:10px}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:12px 24px;margin:0}
-dt{font-weight:600;color:var(--leaf)}
-dd{margin:0}
-dd a{color:var(--ink)}
-@media (max-width:520px){dl{grid-template-columns:1fr;gap:2px}dd{margin-bottom:12px}}
-.hours{border-collapse:collapse;width:100%;max-width:420px}
-.hours th,.hours td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top;font-weight:400}
-.hours th{font-weight:600;white-space:nowrap}
-.hours tr.today{background:var(--card);box-shadow:inset 5px 0 0 var(--sun)}
-.hours tr.today th{color:var(--ember)}
-.hours small{display:block;color:var(--muted);font-size:13px}
-footer{padding:28px 0 40px;color:var(--muted);font-size:14px}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-<header>
-  <h1>Quintal da Brasa</h1>
-  <p class="sub">Gastrobar com comida caseira, música ao vivo e porções generosas em Valinhos.</p>
-  <ul class="facts">
-    <li>Nota 4,5 (31 avaliações)</li>
-    <li>R$ 20–100 por pessoa</li>
-    <li>Refeição no local</li>
-    <li>Pedido on-line</li>
-  </ul>
-  <div class="btns">
-    <a class="btn" href="https://wa.me/5519999098911" target="_blank" rel="noopener">Pedir pelo WhatsApp</a>
-    <a class="btn alt" href="#cardapio">Ver cardápio</a>
-    <a class="btn alt" href="https://www.google.com/maps/search/?api=1&amp;query=Quintal+da+Brasa+Gastrobar+R.+Doze+de+Outubro+801+Valinhos">Como chegar</a>
-  </div>
-</header>
-
-<section id="cardapio">
-  <h2>Destaques do cardápio</h2>
-  <p class="lead">Pratos tradicionais da casa, citados pelos clientes.</p>
-  <div class="dishes">
-    <div class="dish"><div class="tx"><h3>Vaca Atolada</h3><p>Costela bovina cozida com mandioca até o caldo ficar grosso e macio.</p></div></div>
-    <div class="dish"><div class="tx"><h3>Feijoada</h3><p>Feijão preto cozido com carnes, servido com arroz, couve e farofa.</p></div></div>
-    <div class="dish"><div class="tx"><h3>Virado à Paulista</h3><p>Clássico paulista com arroz, tutu de feijão, couve, bisteca, linguiça e ovo frito.</p></div></div>
-  </div>
-  <h3 style="margin:30px 0 0;font-size:24px">Para beliscar e beber</h3>
-  <div class="dishes small">
-    <div class="dish sm"><div class="tx"><h3>Dadinhos de tapioca</h3><p>Cubos crocantes de tapioca com queijo.</p></div></div>
-    <div class="dish sm"><div class="tx"><h3>Croquetes</h3><p>Salgados empanados, ótimos para dividir.</p></div></div>
-    <div class="dish sm"><div class="tx"><h3>Batata frita</h3><p>Porção para a mesa toda.</p></div></div>
-    <div class="dish sm"><div class="tx"><h3>Suco de polpa</h3><p>Copo de 300 ml.</p></div></div>
-  </div>
-  <p class="also">Descrições gerais de cada prato. Pergunte à casa o que acompanha cada um.</p>
-</section>
-
-<section id="avaliacoes">
-  <h2>O que dizem os clientes</h2>
-  <div class="rating"><strong>4,5</strong><span>de 5, em 31 avaliações no Google Maps</span></div>
-  <blockquote>Comida caseira deliciosa, ambiente agradável com música ao vivo e equipe atenciosa e simpática. Porções generosas e preços justos, um ótimo custo-benefício.</blockquote>
-  <p class="src">Resumo das avaliações feito com o Gemini.</p>
-</section>
-
-<section id="contato">
-  <h2>Como chegar</h2>
-  <dl>
-    <dt>Endereço</dt><dd>R. Doze de Outubro, 801<br>Vila Santana, Valinhos – SP, 13274-125</dd>
-    <dt>WhatsApp</dt><dd><a href="https://wa.me/5519999098911" target="_blank" rel="noopener">(19) 99909-8911</a></dd>
-    <dt>Horários</dt><dd><table class="hours"><tbody>
-<tr data-d="3"><th>Quarta-feira</th><td>10h30 – 14h30</td></tr>
-<tr data-d="4"><th>Quinta-feira</th><td>10h30 – 14h30<br>18h30 – 00h00</td></tr>
-<tr data-d="5"><th>Sexta-feira</th><td>10h30 – 14h30<br>18h30 – 00h00</td></tr>
-<tr data-d="6"><th>Sábado</th><td>10h30 – 00h00</td></tr>
-<tr data-d="0"><th>Domingo</th><td>10h30 – 16h00<small>Proclamação da República. Os horários podem ser diferentes.</small></td></tr>
-<tr data-d="1"><th>Segunda-feira</th><td>10h30 – 14h30</td></tr>
-<tr data-d="2"><th>Terça-feira</th><td>10h30 – 14h30</td></tr>
-</tbody></table></dd>
-    <dt>Preço</dt><dd>R$ 20–100 por pessoa (informado por 17 pessoas)</dd>
-    <dt>Plus Code</dt><dd>22P6+VH Vila Santana, Valinhos – SP</dd>
-  </dl>
-</section>
-
-<footer>Quintal da Brasa Gastrobar · Valinhos, SP</footer>
-</div>
-<script>
-try{var d=new Date().getDay();var r=document.querySelector('.hours tr[data-d="'+d+'"]');if(r)r.className='today';}catch(e){}
-</script>
+<main class="wrap">
+  <nav class="site-nav" aria-label="Navegação principal">
+    <a class="brand" href="index.html">Quintal da Brasa</a>
+    <div class="site-nav-links">
+      <a href="pages/cardapio.html">Cardápio</a>
+      <a href="pages/sobre.html">Sobre</a>
+      <a href="pages/contato.html">Contato</a>
+      <a class="nav-cta" href="https://wa.me/5519999098911" target="_blank" rel="noopener">Pedir pelo WhatsApp</a>
+    </div>
+  </nav>
+  <header class="page-header">
+    <h1>Quintal da Brasa</h1>
+    <p class="lead">Gastrobar com comida caseira, música ao vivo e porções generosas em Valinhos.</p>
+  </header>
+  <section class="home-actions" aria-label="Ações do restaurante">
+    <nav class="btns" aria-label="Explore o restaurante">
+      <a class="btn" href="https://wa.me/5519999098911" target="_blank" rel="noopener">Pedir pelo WhatsApp</a>
+      <a class="btn alt" href="pages/cardapio.html">Ver cardápio</a>
+      <a class="btn alt" href="pages/sobre.html">Sobre o restaurante</a>
+      <a class="btn alt" href="pages/contato.html">Endereço e horários</a>
+    </nav>
+  </section>
+  <section class="home-info" aria-label="Informações rápidas">
+    <ul class="home-facts">
+      <li><strong>4,5/5</strong><span>em 31 avaliações</span></li>
+      <li><strong>R$ 20–100</strong><span>por pessoa</span></li>
+      <li><strong>Valinhos</strong><span>refeição no local</span></li>
+    </ul>
+  </section>
+  <section class="home-featured">
+    <div class="home-featured-head">
+      <div>
+        <h2>Destaques do cardápio</h2>
+        <p class="lead">Pratos tradicionais da casa, citados pelos clientes.</p>
+      </div>
+      <a class="home-more" href="pages/cardapio.html">Ver cardápio completo</a>
+    </div>
+    <div class="dishes">
+      <div class="dish"><div class="tx"><h3>Vaca Atolada</h3><p>Costela bovina cozida com mandioca até o caldo ficar grosso e macio.</p></div></div>
+      <div class="dish"><div class="tx"><h3>Feijoada</h3><p>Feijão preto cozido com carnes, servido com arroz, couve e farofa.</p></div></div>
+      <div class="dish"><div class="tx"><h3>Virado à Paulista</h3><p>Clássico paulista com arroz, tutu de feijão, couve, bisteca, linguiça e ovo frito.</p></div></div>
+    </div>
+  </section>
+</main>
 </body>
 </html>
